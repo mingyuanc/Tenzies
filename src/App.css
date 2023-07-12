@@ -5,7 +5,12 @@
 
 body {
   margin: 0;
-  background-color: #0b2434;
+  background: rgb(240, 251, 63);
+  background: radial-gradient(
+    circle,
+    rgba(240, 251, 63, 1) 0%,
+    rgba(252, 70, 70, 1) 100%
+  );
   padding: 100px 0px;
 }
 
@@ -42,45 +47,4 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
-}
-
-.die {
-  aspect-ratio: 1;
-  font-size: 2rem;
-  font-weight: bold;
-  display: flex;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 2px 2px 0px #00000026;
-  transition-duration: 0.4s;
-}
-
-.die:hover {
-  cursor: pointer;
-  background-color: #59e391;
-}
-
-#held {
-  background-color: #59e391;
-}
-
-#die-roll {
-  width: 40%;
-  height: 12%;
-  min-height: 50px;
-  margin-bottom: 20px;
-  background-color: #5035ff;
-  font-family: "karla", sans-serif;
-  vertical-align: center;
-  font-weight: 700;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  transition-duration: 0.4s;
-}
-
-#die-roll:hover {
-  cursor: pointer;
-  background-color: #705ee6;
 }
