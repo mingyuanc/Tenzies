@@ -11,7 +11,7 @@ From this project I have used React and relevant hooks, I also used vite to set 
 
 # Technologies Used
 
-[![My Skills](https://skillicons.dev/icons?i=js,react,vite)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,ts,react,vite)](https://skillicons.dev)
 
 # state of the project
 
