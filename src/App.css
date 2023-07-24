@@ -46,10 +46,8 @@ a:visited {
 }
 
 .gameContainer {
-  padding: 100px 0px;
   width: 100%;
   max-width: 1000px;
-  min-width: 400px;
   aspect-ratio: 1;
   margin: auto;
   border-radius: 8px;
