@@ -32,10 +32,10 @@ a:visited {
   color: black;
 }
 
-body {
-}
-
 .main {
+  padding: 100px 0px;
+  height: fit-content;
+  min-height: calc(100vh - 60px);
   margin: 0;
   background: rgb(240, 251, 63);
   background: radial-gradient(
@@ -43,8 +43,11 @@ body {
     rgba(240, 251, 63, 1) 0%,
     rgba(252, 70, 70, 1) 100%
   );
+}
+
+.gameContainer {
   padding: 100px 0px;
-  width: 60vw;
+  width: 100%;
   max-width: 1000px;
   min-width: 400px;
   aspect-ratio: 1;

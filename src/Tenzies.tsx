@@ -43,25 +43,27 @@ function Tenzies() {
   }
   return (
     <main className="main">
-      {won && <Confetti />}
-      <h1 className="title">Tenzies</h1>
-      <p className="instructions">
-        Roll until all dice are the same. Click each die to freeze it at its
-        current value between rolls.
-      </p>
-      <div className="die-container">
-        {dices.map((x) => (
-          <Die
-            key={x.id}
-            value={x.value}
-            isHeld={x.isHeld}
-            toggleHeld={() => toggleHeld(x.id)}
-          />
-        ))}
+      <div className="gameContainer">
+        {won && <Confetti />}
+        <h1 className="title">Tenzies</h1>
+        <p className="instructions">
+          Roll until all dice are the same. Click each die to freeze it at its
+          current value between rolls.
+        </p>
+        <div className="die-container">
+          {dices.map((x) => (
+            <Die
+              key={x.id}
+              value={x.value}
+              isHeld={x.isHeld}
+              toggleHeld={() => toggleHeld(x.id)}
+            />
+          ))}
+        </div>
+        <button onClick={refreshDies} id="die-roll">
+          <h1>{won ? "New Game" : "Roll"}</h1>
+        </button>
       </div>
-      <button onClick={refreshDies} id="die-roll">
-        <h1>{won ? "New Game" : "Roll"}</h1>
-      </button>
     </main>
   );
 }
